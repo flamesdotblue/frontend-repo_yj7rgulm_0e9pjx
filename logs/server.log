@@ -1,0 +1,19 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 375 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.10.134:3000/
+3:05:53 PM [vite] warning: The character ">" is not valid inside a JSX element
+25 |        <div className="container mx-auto px-6">
+26 |          <h2 className="font-mono text-2xl text-emerald-300 mb-8">
+27 |            > experience_timeline
+   |            ^
+28 |          </h2>
+29 |  
+
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/ExperienceTimeline.jsx

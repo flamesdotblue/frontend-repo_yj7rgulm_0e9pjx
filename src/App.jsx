@@ -1,28 +1,40 @@
-import { useState } from 'react'
+import Hero from './components/Hero';
+import TerminalAbout from './components/TerminalAbout';
+import ExperienceTimeline from './components/ExperienceTimeline';
+import ProjectsGrid from './components/ProjectsGrid';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
+    <div className="min-h-screen bg-black text-emerald-200">
+      {/* Hero with Spline background */}
+      <Hero />
+
+      {/* About in terminal style */}
+      <TerminalAbout />
+
+      {/* Experience timeline */}
+      <ExperienceTimeline />
+
+      {/* Projects */}
+      <ProjectsGrid />
+
+      {/* Simple contact/footer section */}
+      <section id="contact" className="py-16 border-t border-emerald-400/20 bg-black">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl">
+            <h3 className="font-mono text-xl text-emerald-300 mb-4">&gt; contact</h3>
+            <p className="text-emerald-200/80 font-mono">
+              Want to collaborate or chat security? Reach me at
+              <a className="text-emerald-300 hover:underline ml-2" href="mailto:me@cyber.resume">me@cyber.resume</a>
+            </p>
+          </div>
+          <p className="mt-12 text-xs text-emerald-400/50 font-mono">
+            Crafted in dark mode. No trackers. Stay curious.
+          </p>
         </div>
-      </div>
+      </section>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
